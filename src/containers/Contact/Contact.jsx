@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import styles from "./Contact.module.css";
 import contactImg from "../../assets/contact.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   useEffect(() => {
     AOS.init({
       offset: 400,
@@ -12,7 +13,12 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <section className={styles.section} id="contact" data-aos="fade-right">
+      <section
+        ref={contactRef}
+        className={styles.section}
+        id="contact"
+        data-aos="fade-right"
+      >
         <div className={styles["section-head"]}>
           <h1>Ready to organize your next event ?</h1>
           <p>

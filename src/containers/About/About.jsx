@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./About.module.css";
 import Protection from "../../assets/protection.png";
 import Approved from "../../assets/approved.png";
@@ -6,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const About = () => {
+const About = ({aboutRef}) => {
   useEffect(() => {
     AOS.init({
       offset: 400,
@@ -15,7 +16,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <section className={styles.section} id="about" data-aos="fade-right">
+      <section className={styles.section} ref={aboutRef} id="about" data-aos="fade-right">
         <div className={styles["section-head"]}>
           <h1>Why us</h1>
           <p>

@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import styles from "./Introduction.module.css";
-
-const Introduction = () => {
+const Introduction = ({aboutRef, contactRef}) => {
   return (
     <div>
       <section className={styles.section}>
@@ -15,11 +15,11 @@ const Introduction = () => {
           </p>
           <br />
           
-          <a href="#" className={styles["btn-one"]}>
+          <a onClick={aboutRef.current?.scrollIntoView()} href="#contact" className={styles["btn-one"]}>
             {" "}
             Contact us
           </a>
-          <a href="#" className={styles["btn-two"]}>
+          <a onClick={contactRef.current?.scrollIntoView()} href="#about" className={styles["btn-two"]}>
             {" "}
             About us
           </a>

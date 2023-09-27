@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import styles from "./Header.module.css";
 import Logo from "../../assets/WeStyle-white.png";
 import { useState } from "react";
-const Header = () => {
+const Header = ({aboutRef, contactRef}) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -18,7 +19,7 @@ const Header = () => {
                 <a href="">Home</a>
               </li>
               <li className={styles["list-p"]}>
-                <a href="#about">About</a>
+                <a href="#about" onClick={aboutRef.current?.scrollIntoView()}>About</a>
               </li>
 
               <li className={styles["list-p"]}>
@@ -30,7 +31,7 @@ const Header = () => {
               </li>
 
               <span className={styles.contact}>
-                <a href="#contact"> Contact us</a>
+                <a href="#contact" onClick={contactRef.current?.scrollIntoView()}> Contact us</a>
               </span>
             </ul>
           </div>
@@ -45,22 +46,22 @@ const Header = () => {
             <div className={styles.hamburgerList}>
               <ul>
                 <li className={styles["list-p"]}>
-                  <a href="">Home</a>
+                  <a href="" onClick={handleClick}>Home</a>
                 </li>
                 <li className={styles["list-p"]}>
-                  <a href="#about">About</a>
-                </li>
-
-                <li className={styles["list-p"]}>
-                  <a href="">Gallery</a>
+                  <a href="#about" onClick={handleClick}>About</a>
                 </li>
 
                 <li className={styles["list-p"]}>
-                  <a href="{%url 'Blog' %}">Blog</a>
+                  <a href="" onClick={handleClick}>Gallery</a>
+                </li>
+
+                <li className={styles["list-p"]}>
+                  <a href="{%url 'Blog' %}" onClick={handleClick}>Blog</a>
                 </li>
 
                 <span className={styles["list-p"]}>
-                  <a href="#contact"> Contact us</a>
+                  <a href="#contact" onClick={handleClick}> Contact us</a>
                 </span>
               </ul>
             </div>
