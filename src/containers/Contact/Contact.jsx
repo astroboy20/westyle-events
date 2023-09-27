@@ -1,6 +1,15 @@
 import styles from "./Contact.module.css";
-import contactImg from '../../assets/contact.png'
+import contactImg from "../../assets/contact.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <section className={styles.section} id="contact" data-aos="fade-right">
@@ -30,4 +39,4 @@ const Contact = () => {
   );
 };
 
-export  {Contact}
+export { Contact };
