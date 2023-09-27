@@ -16,7 +16,7 @@ const Header = ({aboutRef, contactRef}) => {
           <div className={styles["nav-lists"]}>
             <ul>
               <li className={styles["list-p"]}>
-                <a href="">Home</a>
+                <a href="/">Home</a>
               </li>
               <li className={styles["list-p"]}>
                 <a href="#about" onClick={aboutRef.current?.scrollIntoView()}>About</a>
@@ -27,7 +27,7 @@ const Header = ({aboutRef, contactRef}) => {
               </li>
 
               <li className={styles["list-p"]}>
-                <a href="{%url 'Blog' %}">Blog</a>
+                <a href="/blog/">Blog</a>
               </li>
 
               <span className={styles.contact}>

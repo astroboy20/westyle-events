@@ -1,20 +1,23 @@
-
-import { useRef } from 'react'
-import './App.css'
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
-import { Content } from './containers/Content'
+import "./App.css";
+import { BlogPosts } from "./blog-container/BlogPosts/BlogPost";
+import { CreatePost } from "./blog-container/CreatePost/CreatePost";
+import BlogView from "./blog-container/Show/Show";
+import { Content } from "./containers/Content";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-const aboutRef = useRef(null)
-const contactRef = useRef(null)
   return (
     <>
-      <Header aboutRef={aboutRef} contactRef={contactRef}/>
-      <Content aboutRef={aboutRef} contactRef={contactRef}/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="/blog/" element={<BlogPosts />} />
+          <Route path="/show/:id" element={<BlogView />} />
+          <Route path="blog/create" element={<CreatePost />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
