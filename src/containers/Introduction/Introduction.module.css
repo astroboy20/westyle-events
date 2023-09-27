@@ -15,8 +15,6 @@
 }
 .section h1{
     width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
     animation: typing 6s steps(105),caret 1s steps(1) infinite;
     color: #fff;
     font-weight: 700;
@@ -61,23 +59,20 @@
     .section{
         display: flex;
         flex-direction: column;
-        
         gap: 200px;
     }
     .text{
-        margin: 0;
+        margin: 10% auto;
     }
     .section h1{
         width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
         animation: typing 6s steps(105),caret 1s steps(1) infinite;
         color: #fff;
-        font-size: 5px;
+        font-size: 35px;
         
     }
-    .section.text  p{
-       font-size: 5px;
+    .section .text  p{
+       font-size: 12px;
         
     }
     

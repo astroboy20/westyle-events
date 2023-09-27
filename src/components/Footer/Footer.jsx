@@ -4,7 +4,7 @@ const Footer = () => {
     <>
       <section className={styles.section}>
         <div className={styles["logo-left"]}>
-          <h1 className={styles.logo}>Shortify</h1>
+          <h1 className={styles.logo}>Westyle</h1>
           <p className={styles["section-p2"]}>We began in 2018, with the goal of serving  <br/> clients better by delivering unexpected creativity.</p>
         </div>
 
