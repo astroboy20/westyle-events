@@ -21,12 +21,14 @@ const BlogPosts = () => {
     }, [])
   return (
     <div>
+        
       {blogs.map((blog)=>(
         <div key={blog.id}>
             <p>Title:{blog.Title}</p>
             <p>Body:{blog.Body}</p>
             <p>ID:{blog.id}</p>
-            <Link to={"/show/"+blog.id} >View</Link>
+            <Link to={"/blog/"+blog.id} >View</Link>
+            <Link to={"/edit-blog/"+blog.id} >Edit</Link>
         </div>
       ))}
     </div>

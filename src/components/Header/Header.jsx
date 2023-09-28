@@ -57,7 +57,7 @@ const Header = ({aboutRef, contactRef}) => {
                 </li>
 
                 <li className={styles["list-p"]}>
-                  <a href="{%url 'Blog' %}" onClick={handleClick}>Blog</a>
+                  <a href="/blog/" onClick={handleClick}>Blog</a>
                 </li>
 
                 <span className={styles["list-p"]}>

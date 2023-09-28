@@ -8,8 +8,8 @@ const Introduction = ({aboutRef, contactRef}) => {
           <h1>We organize grandiose events.</h1>
           <p>
             WeStyle is created to organize and manage events. Whether it is
-            corporate, small parties in apartments or even fashion events. Our
-            aim is to take care of everything from beginning to end, including
+            corporate, <br/> small parties in apartments or even fashion events. Our
+            aim is to take care of everything from beginning to end, <br/> including
             choosing the right location, booking equipment and promoting it on
             social media!
           </p>

@@ -26,8 +26,8 @@
 .section .text p{
     color: #fff;
     text-align: center;
-    font-size:16px ;
-    Line-height:20.83px;
+    font-size:18px ;
+    Line-height:30.83px;
     padding-bottom:1.5%;
 }
 .section a{
@@ -41,7 +41,7 @@
     background:#F7669D;
     color:#fff;
     transition: 0.5s ease;
-    margin-right: 20px;
+    margin-right: 10px;
    
 }
 .btn-one:hover{
@@ -70,10 +70,13 @@
         animation: typing 6s steps(105),caret 1s steps(1) infinite;
         color: #fff;
         font-size: 35px;
+        margin-bottom: 2%;
         
     }
     .section .text  p{
        font-size: 12px;
+       Line-height:20.83px;
+       margin-bottom: 2%;
         
     }
     
