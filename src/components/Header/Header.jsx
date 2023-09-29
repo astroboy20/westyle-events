@@ -2,6 +2,7 @@
 import styles from "./Header.module.css";
 import Logo from "../../assets/WeStyle-white.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Header = ({aboutRef, contactRef}) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
@@ -27,7 +28,7 @@ const Header = ({aboutRef, contactRef}) => {
               </li>
 
               <li className={styles["list-p"]}>
-                <a href="/blog/">Blog</a>
+                <Link to="/blog/">Blog</Link>
               </li>
 
               <span className={styles.contact}>
@@ -57,7 +58,7 @@ const Header = ({aboutRef, contactRef}) => {
                 </li>
 
                 <li className={styles["list-p"]}>
-                  <a href="/blog/" onClick={handleClick}>Blog</a>
+                  <Link to="/blog/" onClick={handleClick}>Blog</Link>
                 </li>
 
                 <span className={styles["list-p"]}>
