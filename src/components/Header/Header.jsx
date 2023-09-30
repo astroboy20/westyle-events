@@ -47,10 +47,10 @@ const Header = ({aboutRef, contactRef}) => {
             <div className={styles.hamburgerList}>
               <ul>
                 <li className={styles["list-p"]}>
-                  <a href="" onClick={handleClick}>Home</a>
+                  <a href=""  onClick={handleClick}>Home</a>
                 </li>
                 <li className={styles["list-p"]}>
-                  <a href="#about" onClick={handleClick}>About</a>
+                  <a href="#about" ref={aboutRef} onClick={handleClick}>About</a>
                 </li>
 
                 <li className={styles["list-p"]}>
@@ -62,7 +62,7 @@ const Header = ({aboutRef, contactRef}) => {
                 </li>
 
                 <span className={styles["list-p"]}>
-                  <a href="#contact" onClick={handleClick}> Contact us</a>
+                  <a href="#contact"  ref={contactRef} onClick={handleClick}> Contact us</a>
                 </span>
               </ul>
             </div>

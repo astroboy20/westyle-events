@@ -15,7 +15,7 @@ const Content = () => {
       <Introduction aboutRef={aboutRef} contactRef={contactRef} />
       <About aboutRef={aboutRef} />
       <Contact contactRef={contactRef} />
-      <Footer />
+      <Footer aboutRef={aboutRef} contactRef={contactRef}/>
     </>
   );
 };

@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import styles from "./Footer.module.css";
-const Footer = () => {
+const Footer = ({aboutRef,contactRef}) => {
   return (
     <>
       <section className={styles.section}>
@@ -11,9 +12,9 @@ const Footer = () => {
         <div className={styles.features}>
           <h1 className={styles["section-h1"]}>Pages</h1>
           <p className={styles["section-p"]}><a href="">Home</a></p>
-          <p className={styles["section-p"]}> <a href="#about">About</a></p>
+          <p className={styles["section-p"]}> <a ref={aboutRef} href="#about">About</a></p>
           <p className={styles["section-p"]}><a href="#contact">Gallery</a></p>
-          <p className={styles["section-p"]}><a href="#contact"> Contact</a></p>
+          <p className={styles["section-p"]}><a ref={contactRef} href="#contact"> Contact</a></p>
         </div>
 
         <div className={styles.resources}>
